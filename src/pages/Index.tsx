@@ -1,12 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Sidebar from "@/components/Sidebar";
+import MainContent from "@/components/MainContent";
+import RightSidebar from "@/components/RightSidebar";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="h-screen bg-muted/30 flex flex-col overflow-hidden">
+      <div className="flex flex-1 min-h-0">
+        <Sidebar />
+        <MainContent />
+        <RightSidebar />
       </div>
+      <MusicPlayer />
     </div>
   );
 };
